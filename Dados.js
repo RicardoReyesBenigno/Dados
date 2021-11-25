@@ -72,6 +72,6 @@ function Jugador(nombre){
                 }
             }
         i=i+1;
-    } while(banderaGanador===false);
-    console.log("Numero de juegos jugados: "+i);
+    } while(HuboGanador===false);
+    console.log("Numero de partidas: "+i);
     console.log("Ganador del torneo es: "+ ganadorTorneo);
