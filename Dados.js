@@ -5,7 +5,7 @@ function Jugador(nombre){
     this.caraDado2 = 0;
 }
 
-    function JuegoDados(numeroJuego, j1, j2){
+    function JuegoDados(numeroJuego, Juno, Jdos){
         this.numeroJuego = numeroJuego;
         this.jugador1 = Juno;
         this.jugador2 = Jdos;
@@ -65,9 +65,9 @@ function Jugador(nombre){
                 
                 HuboGanador=true;
                 if(juegoJugador1===3){
-                    NombreganadorTorneo=Juno.nombre;
+                    NombreDelganadorTorneo=Juno.nombre;
                 }else{
-                    NombreganadorTorneo=Jdos.nombre;
+                    NombreDelganadorTorneo=Jdos.nombre;
                     
                 }
             }
