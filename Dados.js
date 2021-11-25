@@ -39,21 +39,21 @@ function Jugador(nombre){
     Juno.nombre="Pedro Sanchez";
     Jdos.nombre="Arturo Ramirez";
     let i=1;
-    let banderaGanador=false;
+    let HuboGanador=false;
     let empate=0;
     let ganadorTorneo="";
     
     do{     
-        let juego1 = new JuegoDados(i, player1, player2);
+        let juego1 = new JuegoDados(i, Juno, Jdos);
         juego1.tirarDados();
         let ganador = juego1.determinaGanador();
         
         if(ganador ===Juno.nombre){
-            ganadorNombre = player1.nombre
+            ganadorNombre = Juno.nombre
             juegoJugador1++
         }
         if(ganador ===Jdos.nombre){
-            ganadorNombre = player2.nombre
+            ganadorNombre = Jdos.nombre
             juegoJugador2++
         }
         if(ganador ==="Empate"){
